@@ -37,6 +37,12 @@ package Introduction
          */
 
         demoBoolean()
+
+        /**
+         * We run myString function
+         */
+
+        myStrings()
     }
 
 private fun demoChar(){
@@ -81,4 +87,21 @@ private fun demoBoolean(){
     } else{
         println("Is big is = $isSmall")
     }
+}
+
+/**
+ * Strings in kotlin
+ */
+
+
+private fun myStrings(){
+    val myString = "Okello There"
+    val ouString: String = """
+       My Name is okello thomas
+        sure, i think you should be careful
+        coz, someone can harm you
+    """
+    val myStringLength: Int = ouString.length
+
+    println("{$ouString} is $myStringLength long")
 }
