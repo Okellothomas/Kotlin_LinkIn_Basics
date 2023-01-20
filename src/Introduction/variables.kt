@@ -25,4 +25,60 @@ package Introduction
         var myConvertToInte = myFloat.toInt()
 
         println(myConvertToInte)
+
+        /**
+         * We then run our function
+         */
+
+        demoChar()
+
+        /**
+         * We run the deBolean function
+         */
+
+        demoBoolean()
     }
+
+private fun demoChar(){
+    /**
+     * Here we write all the character datatypes in kotlin
+     */
+
+    var myChar: Char = 'A'
+    var myAcc = '\t'
+    var infinity = '\u221E'
+
+    /**
+     * We go ahead and print the entire code string to the line
+     */
+
+    println("Character is $myChar")
+    println("The tab is $myAcc next line")
+    println("Infinity is $infinity")
+
+    var ledCode = 10.toChar()
+
+    println("The ledCode is $ledCode")
+}
+
+private fun demoBoolean(){
+    /**
+     * we work with boolean variables
+     */
+
+    var isTrue: Boolean = false
+    var isBig = 1_000_000
+    var isSmall  =  200
+
+    println("it is not true Oh ${!isTrue}")
+
+    /**
+     * Compare the values
+     */
+
+    if (isBig > isSmall){
+        println("Is isbig is = $isBig")
+    } else{
+        println("Is big is = $isSmall")
+    }
+}
