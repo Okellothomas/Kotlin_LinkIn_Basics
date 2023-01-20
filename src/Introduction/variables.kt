@@ -43,6 +43,11 @@ package Introduction
          */
 
         myStrings()
+
+        /**
+         * Implementing if and when
+         */
+        ifAndWhen()
     }
 
 private fun demoChar(){
@@ -104,4 +109,29 @@ private fun myStrings(){
     val myStringLength: Int = ouString.length
 
     println("{$ouString} is $myStringLength long")
+}
+
+private fun ifAndWhen(){
+    /**
+     * We do the if and when statement
+     */
+
+    val age: Int = 300
+    val score: Int = 200
+
+    var myIf: String = if (age > score) "Age is true" else "age is one "
+
+    print("It is true $myIf")
+
+    /**
+     * Implementing the when statement
+     */
+
+    var myWhen = when(age){
+        in 1..19 -> "Sure bothers"
+        in  20..199 -> "Call me"
+        else -> "call home"
+    }
+
+    println("Whe is $myWhen")
 }
