@@ -9,6 +9,8 @@ fun main(){
 
     // we call the functions here
     myFor()
+    // call the while function
+    myWhile()
 
 }
 
@@ -35,5 +37,31 @@ private fun myFor(){
         }else {
             println("Ruto tano tena")
         }
+    }
+}
+
+/**
+ * the while loop
+ */
+
+private fun myWhile(){
+    // implementing the while loop
+    var i = 10
+    while (i < 20){
+        println("School is not fair")
+        i++
+    }
+
+    // second challange
+    var p = 0
+    while (p < 10){
+        val sum = 30 + 40
+        if (sum == 90){
+            println(sum)
+        } else {
+            println("sure crock")
+        }
+        p++
+
     }
 }
