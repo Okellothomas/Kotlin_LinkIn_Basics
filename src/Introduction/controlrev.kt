@@ -11,7 +11,8 @@ fun main(){
     myFor()
     // call the while function
     myWhile()
-
+    // call the dowhile function
+    myDoWhile()
 }
 
 /**
@@ -64,4 +65,22 @@ private fun myWhile(){
         p++
 
     }
+}
+
+/**
+ * The dowhile implementation
+ */
+
+private fun myDoWhile(){
+    // implementing the dowhile
+    var p = 1
+    do{
+        if (3 > 1){
+            println("do while is a nice buddies")
+        }else{
+            println("I think while loop is just fun still")
+        }
+    } while (p < 10)
+
+
 }
