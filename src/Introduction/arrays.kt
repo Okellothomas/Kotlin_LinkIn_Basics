@@ -13,6 +13,9 @@ fun main(){
 
     // calling myarrayObject
     myArrayType()
+
+    // call the third method
+    myArrayConstructor()
 }
 
 /**
@@ -45,4 +48,25 @@ private fun myArrayType(){
     for (student in myArray){
         println(student)
     }
+}
+
+/**
+ * Implementing using the array constructor
+ */
+
+private fun myArrayConstructor(){
+    // code implementation
+    val fives = Array(5, ::fiver)
+    fives.forEach { println(it) }
+
+    // array properties, size, indices and lastIndex
+
+    println("the sized of he array is ${fives.size} elements")
+    println("the indices of the array ${fives.indices}")
+    println("the last index of the array ${fives.lastIndex}")
+}
+
+
+fun fiver(index:Int): Int{
+    return index * 5
 }
